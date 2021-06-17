@@ -48,62 +48,24 @@
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Meu natal em Cidade do Cabo</h2>
-                            <h3 class="post-subtitle">Muitas cores brilhavam na cidade. Confesso que também me apaixonei</h3>
-                        </a>
-                        <p class="post-meta">
-                            Por
-                            <a href="#!">Carlinhos</a>
-                            em Janeiro de 2018
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Pelourinho e os doiradinhos</h2>
-                            <h3 class="post-subtitle">Artistas mirins me encantaram com danças e cantos.</h3>
-                        </a>
-                        <p class="post-meta">
-                            Por
-                            <a href="#!">Carlinhos</a>
-                            em Janeiro de 2018
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">Dia dos namorados na Ponte do Amor</h2>
-                            <h3 class="post-subtitle">Sozinho, mas muito feliz com a linda cidade da França</h3>
-                        </a>
-                        <p class="post-meta">
-                            Por
-                            <a href="#!">Carlinhos</a>
-                            em Janeiro de 2018
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
-                    <!-- Post preview-->
-                    <div class="post-preview">
-                        <a href="post.html">
-                            <h2 class="post-title">São Paulo em São Paulo</h2>
-                            <h3 class="post-subtitle">No primeiro dia acabei me perdendo no metrô. :{</h3>
-                        </a>
-                        <p class="post-meta">
-                            Por
-                            <a href="#!">Carlinhos</a>
-                            em Janeiro de 2018
-                        </p>
-                    </div>
-                    <!-- Divider-->
-                    <hr class="my-4" />
+
+                <% for(var i = 0; i< data.length; i++) { %>
+                                    <!-- Post preview-->
+                                    <div class="post-preview">
+                                        <a href="post.html">
+                                            <h2 class="post-title"><%= data[i].title %></h2>
+                                            <h3 class="post-subtitle"><%= data[i].shortDescription %></h3>
+                                        </a>
+                                        <p class="post-meta">
+                                            Por
+                                            <a href="#!">Carlinhos</a>
+                                            em Janeiro de 2018
+                                        </p>
+                                    </div>
+                                    <!-- Divider-->
+                                    <hr class="my-4" />
+                <% } %>
+                    
                     <!-- Pager-->
                     <div class="d-flex justify-content-end mb-4"><a class="btn btn-primary text-uppercase" href="#!">Mais posts →</a></div>
                 </div>
